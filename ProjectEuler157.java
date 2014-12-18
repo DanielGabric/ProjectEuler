@@ -1,8 +1,5 @@
-package projecteulersol;
-
 import java.math.BigInteger;
 import java.util.*;
-
 public class ProjectEuler157 extends Library {
     public static void main(String[] args) {
         double first = System.currentTimeMillis();
