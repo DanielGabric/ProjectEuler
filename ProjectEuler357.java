@@ -1,5 +1,5 @@
 //Simple bruteforce with few optimizations
-public class ProjectEuler357 {
+public class ProjectEuler357 extends Library{
     static boolean[]isPrime;
     public static void main(String[] args) {
         int N = 100000000;
@@ -14,24 +14,6 @@ public class ProjectEuler357 {
             sum += n;
         }
         System.out.println(sum);
-    }
-    public static boolean isSquare(long n) {
-        long a = (long) Math.sqrt(n);
-        return a * a == n;
-    }
-        public static boolean[] sieve(int N) {
-        isPrime = new boolean[N + 1];
-        for (int i = 2; i <= N; i++) {
-            isPrime[i] = true;
-        }
-        for (int i = 2; i * i <= N; i++) {
-            if (isPrime[i]) {
-                for (int j = i; i * j <= N; j++) {
-                    isPrime[i * j] = false;
-                }
-            }
-        }
-        return isPrime;
     }
     public static boolean getFactors(int n) {
         ArrayList<Integer> factors = new ArrayList<Integer>();
