@@ -6,6 +6,7 @@ public class ProjectEuler231 extends Library{
     //N by powers of 5, and this got you the final numbers of factors of 5 in the N!
     //By using this property we can get the exponents of any prime in N! by
     //dividing by powers of the Prime P
+    //When getting exponents in choose, just subtract all exponents of R and (N-R) from N
     public static void main(String[] args) {
         ArrayList<Integer>primes = sieveN(2,20000000);
         int n = 20000000;
