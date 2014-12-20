@@ -2,7 +2,6 @@ import java.math.BigInteger;
 import java.util.*;
 public class ProjectEuler157 extends Library {
     public static void main(String[] args) {
-        double first = System.currentTimeMillis();
         int n = 1;
         long c=0;
         for (int i = 1; i <=9; ++i) {
