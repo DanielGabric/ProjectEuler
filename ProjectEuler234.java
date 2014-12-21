@@ -8,7 +8,6 @@ public class ProjectEuler234 extends Library {
         long num = 0;
         long sum = 0;
         for (int i = 0; i < primes.size(); ++i) {
-            if (primes.get(i) > N)break;
             long p1 = primes.get(i);
             long q1 = primes.get(i + 1);
             long p = p1 * p1 + 1;
