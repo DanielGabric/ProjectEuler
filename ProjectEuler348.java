@@ -1,5 +1,5 @@
 //Bruteforce
-public class ProjectEuler348 {
+public class ProjectEuler348 extends Library{
     public static void main(String[] args) {
         int c = 0;
         long sum = 0;
@@ -21,10 +21,6 @@ public class ProjectEuler348 {
             i++;
         }
         System.out.println(sum);
-    }
-    public static boolean isSquare(long N){
-        long n = (long)Math.sqrt(N);
-        return n*n==N;
     }
     public static boolean isPali(long num) {
         long n = num;
