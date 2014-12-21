@@ -1,11 +1,8 @@
 import java.util.*;
 public class ProjectEuler234 extends Library {
-    static ArrayList<Long> seen = new ArrayList<Long>();
     static ArrayList<Integer> primes = sieveN(2, 1100000);
     public static void main(String[] args) {
         long N = 999966663333L;
-        long UPPER = (long) Math.sqrt(N);
-        long num = 0;
         long sum = 0;
         for (int i = 0; i < primes.size(); ++i) {
             long p1 = primes.get(i);
