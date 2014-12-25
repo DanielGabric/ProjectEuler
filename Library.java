@@ -2,8 +2,14 @@ import java.math.*;
 import java.util.*;
 
 public class Library {
+    //Factorial
+    public static long f(long n){
+        long s = 1;
+        for(long i=1;i<=n;++i)s*=i;
+        return s;
+    }
+    
     // Returns the reverse of the given string.
-
     public static String reverse(String s) {
         return new StringBuilder(s).reverse().toString();
     }
