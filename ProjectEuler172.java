@@ -12,7 +12,8 @@ public class ProjectEuler172 extends Library {
                                     for (int h = 0; h < 4; ++h) {
                                         for (int i = 0; i < 4; ++i) {
                                             for (int j = 0; j < 4; ++j) {
-                                                z(new int[]{a, b, c, d, e, f, g, h, i, j}, a + b + c + d + e + f + g + h + i + j);
+                                                z(new int[]{a, b, c, d, e, f, g, h, i, j},
+                                                a + b + c + d + e + f + g + h + i + j);
                                             }
                                         }
                                     }
