@@ -19,7 +19,6 @@ public class ProjectEuler231 extends Library{
                 pj*=p;
                
             }
-            //sum+=p*sum1;
         }
         System.out.println(sum);
     }
