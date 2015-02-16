@@ -15,8 +15,8 @@ public class ProjectEuler159 extends Library {
                 //2 factors of i
                 int a = f.get(2*j);
                 int b = f.get(2*j+1);
-                //Either the sum of the minimum of the digital root sums of a and b are the min
-                //or the digital root sum of i is the min
+                //Either the sum of the maximum of the digital root sums of a and b are the min
+                //or the digital root sum of i is the max
                 mdrs[i] = Math.max(mdrs[i], mdrs[a] + mdrs[b]);
             }
             //increment min
