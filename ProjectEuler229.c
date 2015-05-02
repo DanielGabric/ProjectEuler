@@ -2,8 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #define N 2000000000
-int main()
-{
+int main(){
     char* num = malloc(N+1);
     char *num1= malloc(N+1);
     char *num2= malloc(N+1);
