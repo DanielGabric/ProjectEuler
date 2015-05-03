@@ -1,6 +1,3 @@
-//repunit of length k = (10^k-1)/9
-import java.util.*;
-import java.math.*;
 public class ProjectEuler129{
     public static void main(String[]args){
         for(long n=1000001;;n+=2){
