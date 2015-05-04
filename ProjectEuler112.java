@@ -8,19 +8,17 @@ public class ProjectEuler112 {
             int smaller =0;
             int same =0;
             for(int x=0;x<n.length()-1;++x){
-                if(n.charAt(x)<n.charAt(x+1)){
+                if(n.charAt(x)<n.charAt(x+1))
                     smaller++;
-                }else if (n.charAt(x)>n.charAt(x+1)){
+                else if (n.charAt(x)>n.charAt(x+1))
                     bigger++;
-                }else{
+                else 
                     same++;
-                }
             }
-            if(smaller > 0 && bigger > 0){
+            if(smaller > 0 && bigger > 0)
                 bounce ++; 
-            }else{
+            else 
                 nonBounce++;
-            }
             if(bounce/i == 0.99){
                 System.out.println(i);
                 break;

@@ -11,7 +11,6 @@ public class ProjectEuler116 {
             int factor = 1;
             //Keep incrementing the amount of red tiles while the total is less then or equal to N
             while(factor*l<=N){
-             
                 //Adding all combinations of red tiles of length l
                 count = count.add(choose(N-factor*l+factor,factor));
                 factor++;
