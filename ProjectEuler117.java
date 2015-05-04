@@ -9,7 +9,6 @@ public class ProjectEuler117 {
         }
         int N = 50;
         BigInteger count = BigInteger.ZERO;
-
         for(int i=0;i*2<=N;++i){
             for(int j=0;3*j+i*2<=N;++j){
                 for(int k=0;4*k+3*j+2*i<=N;++k){
@@ -18,10 +17,8 @@ public class ProjectEuler117 {
                 }
             }
         }
-        
         System.out.println(count);
     }
-
     public static BigInteger choose(int n, int r) {
         return factorial[n].divide(factorial[n - r].multiply(factorial[r]));
     }

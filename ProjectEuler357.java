@@ -1,4 +1,3 @@
-//Simple bruteforce with few optimizations
 public class ProjectEuler357 extends Library{
     static boolean[]isPrime;
     public static void main(String[] args) {
@@ -7,11 +6,8 @@ public class ProjectEuler357 extends Library{
         sieve(100000005);
         out:
         for (int n = 2; n <= N; n += 4) {
-            if (isSquare(n)) {
-                continue;
-            }
-            if(getFactors(n))
-            sum += n;
+            if (isSquare(n))continue;
+            if(getFactors(n))sum += n;
         }
         System.out.println(sum);
     }
@@ -19,9 +15,8 @@ public class ProjectEuler357 extends Library{
         ArrayList<Integer> factors = new ArrayList<Integer>();
         for (int d = 1; d <= Math.sqrt(n); ++d) {
             int p = d+n/d;
-            if (n % d == 0) {
+            if (n % d == 0)
                 if(!isPrime[p])return false;
-            }
         }
         return true;
     }
