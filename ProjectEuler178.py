@@ -1,4 +1,4 @@
-prev = [-1]*100000000
+prev = [-1]*1500000
 START = 10
 END = 40
 totSum=0
@@ -10,7 +10,6 @@ def rec(num_digits, current_digit, allDigits):
             return 1
         else:
             return 0
-
     sum1 = 0
     hash1 = current_digit+10*num_digits+1000*allDigits
     if prev[hash1]!=-1:
