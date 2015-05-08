@@ -1,10 +1,9 @@
 //Prim's Algorithm made me happy
+import java.util.*;
+import java.io.*;
 public class ProjectEuler107 {
-    static int col;
-    static int network[][];
+    static int col, network[][],dist[],next[];
     static boolean v[];
-    static int dist[];
-    static int next[];
     public static void main(String[] args) throws FileNotFoundException {
         Scanner s = new Scanner(new File("network.txt"));
         col = 40;

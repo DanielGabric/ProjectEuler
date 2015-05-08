@@ -10,26 +10,17 @@ public class ProjectEuler95 {
             int[] q = new int[1000001];
             int min = 1000000;
             while (true) {
-                if (x > 1000000 || isPrime[x]) {
-                    continue out;
-                }
+                if (x > 1000000 || isPrime[x])continue out;
                 q[x]++;
-                if (q[x] == 2 && x != i) {
-                    continue out;
-                }
-                if (q[i] == 2) {
-                    break;
-                }
+                if (q[x] == 2 && x != i)continue out;
+                if (q[i] == 2)break;
                 ++c;
                 ArrayList<Integer> factors = Library.getFactors(x);
                 x = 0;
-                for (int r = 0; r < factors.size(); ++r) {
-                    x += factors.get(r);
-                }
+                for (int r :factors)x += r;
                 x -= factors.get(1);
                 min = Math.min(x,min);
             }
-            
             if(max<c){
                 max = c;
                 low=min;

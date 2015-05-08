@@ -5,10 +5,8 @@ public class ProjectEuler170 extends Library {
     public static void main(String[] args) {
         cat:
         do {
-
             for (int i = 2; i < f.length - 2; ++i) {
-                int first = 0;
-                int second = 0;
+                int first = 0,second = 0;
                 for (int j = 0; j < i; ++j) {
                     first *= 10;
                     first += f[j];
@@ -25,15 +23,12 @@ public class ProjectEuler170 extends Library {
                         d(n, s);
                         d(n, first / j);
                         d(n, second / j);
-                        for (int k = 0; k < 10; ++k) {
-                            if (n[k] != 1) {
+                        for (int k = 0; k < 10; ++k) 
+                            if (n[k] != 1) 
                                 continue out;
-                            }
-                        }
                         int res = 0;
-                        for (int k = 0; k < 10; ++k) {
+                        for (int k = 0; k < 10; ++k)
                             System.out.print(f[k]);
-                        }
                         System.out.println();
                         break cat;
                     }
