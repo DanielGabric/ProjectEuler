@@ -27,7 +27,6 @@ public class ProjectEuler159 extends Library {
 
    //Digital root sum
     public static int getDS(int n) {
-        int r = n%9;
-        return r==0?9:r;
+        return n%9==0?9:n%9;
     }
 }
