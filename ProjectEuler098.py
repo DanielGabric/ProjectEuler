@@ -42,9 +42,4 @@ for i in range(len(lists)):
                         if m in squares:
                             if m > maximum:maximum=m
                             if n > maximum:maximum=n
-print maximum
-
-
-
-
-                
+print maximum                
