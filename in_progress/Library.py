@@ -15,3 +15,11 @@ def getPrimeList(n):
         if isPrime[i]:listPrimes.append(i)
 
     return listPrimes
+
+def powMod(a,b,c):
+    if(b==1): return a%c
+    x = powMod(a,b>>1,c)
+    x = (x*x)%c
+    if(b&1==1)==1: # if odd number
+        x = (x*a)%c
+    return x
