@@ -21,7 +21,7 @@ int main(){
         for(b=1;b<=M;++b)
             for(c=1;c<=M;++c)
                 for(d=1;d<=M;++d)
-                    if(isSquare((a*b+b*c+c*d+d*a-gcd(a,b)-gcd(b,c)-gcd(c,d)-gcd(d,a))/2+1))
+                    if(isSquare(((a+c)*(b+d)-gcd(a,b)-gcd(b,c)-gcd(c,d)-gcd(d,a))/2+1))
                         sum ++;
     printf("%lli\n",sum);
     return 0;
