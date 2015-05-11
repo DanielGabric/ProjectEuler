@@ -14,6 +14,8 @@ def rec(num_digits, current_digit, allDigits):
             return 0
     sum1 = 0
     hash1 = current_digit+10*num_digits+1000*allDigits
+    #if this arrangement of arguments has been seen, then we know the number
+    #of step numbers, so just return it
     if prev[hash1]!=-1:
         return prev[hash1]
     #checks if the digit has already been seen
