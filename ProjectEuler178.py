@@ -3,7 +3,7 @@ START = 10
 END = 40
 totSum=0
 def rec(num_digits, current_digit, allDigits):
-    #stores a binary string og length 10, starts out as 1111111111
+    #stores a binary string of length 10, starts out as 1111111111
     #if a digit has been seen, it eliminates a 1, if the string is 0
     #the rule has been met
     binRep = 1 << current_digit
