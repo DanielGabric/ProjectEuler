@@ -16,5 +16,4 @@ public class ProjectEuler156 extends Library {
             n/=10;
         }
     }
-    
 }
