@@ -9,7 +9,7 @@ public class ProjectEuler357 extends Library{
             if (isSquare(n))continue;
             if(getFactors(n))sum += n;
         }
-        System.out.println(sum);
+        System.out.println(sum); 
     }
     public static boolean getFactors(int n) {
         for (int d = 1; d <= Math.sqrt(n); ++d) {
