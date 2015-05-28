@@ -31,5 +31,5 @@ public class ProjectEuler64 {
     public static boolean s(long N) {
         long a = (long) Math.sqrt(N);
         return a * a == N;
-    }
+    } 
 }
