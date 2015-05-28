@@ -10,5 +10,5 @@ public class ProjectEuler214 {
             if(l[start]==25&&t[start]+1==start)sum+=start;
         }
         System.out.println(sum);
-    }
+    } 
 }
