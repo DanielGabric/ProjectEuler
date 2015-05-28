@@ -11,4 +11,4 @@ public class ProjectEuler179 {
             if(array[i]==array[i+1])c++;
         System.out.println(c);
     }
-}
+} 
