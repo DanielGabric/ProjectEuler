@@ -16,5 +16,5 @@ public class ProjectEuler112 {
                 break;
             }
         }
-    }
+    } 
 }
