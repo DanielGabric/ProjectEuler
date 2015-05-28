@@ -40,5 +40,5 @@ def isPrime(n):
             return False
         if n % (counter + 2) == 0: 
             return False    
-        counter += 6
+        counter += 6 
     return True
