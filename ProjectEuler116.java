@@ -20,5 +20,5 @@ public class ProjectEuler116 {
     }
     public static BigInteger choose(int n, int r){
         return factorial[n].divide(factorial[n-r].multiply(factorial[r]));
-    }
+    } 
 }

@@ -19,4 +19,4 @@ public class ProjectEuler117 {
     public static BigInteger choose(int n, int r) {
         return factorial[n].divide(factorial[n - r].multiply(factorial[r]));
     }
-}
+} 
