@@ -28,4 +28,4 @@ public class ProjectEuler95 {
         }
         System.out.println(low);
     }
-}
+} 
