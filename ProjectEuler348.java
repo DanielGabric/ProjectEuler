@@ -8,7 +8,7 @@ public class ProjectEuler348 extends Library{
                 int a = 0;
                 for(long r =1; r*r*r<i;++r){
                     long s = i-r*r*r;
-                    if(isSquare(s))a++;
+                    if(isSquare(s))a++; 
                 }
                 if(a==4){
                     c++;
