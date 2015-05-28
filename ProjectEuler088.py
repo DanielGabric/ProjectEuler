@@ -16,4 +16,4 @@ for i in range(2,12001):
     if j not in saved:
         tot+=j
     saved.append(j)
-print tot
+print tot 
