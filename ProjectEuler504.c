@@ -24,5 +24,5 @@ int main(){
                     if(isSquare(((a+c)*(b+d)-gcd(a,b)-gcd(b,c)-gcd(c,d)-gcd(d,a))/2+1))
                         sum ++;
     printf("%lli\n",sum);
-    return 0;
+    return 0; 
 }
