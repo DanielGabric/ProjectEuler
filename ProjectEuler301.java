@@ -1,4 +1,3 @@
-//Solution is the 32nd fibonacci number
 public class ProjectEuler301 {
     public static void main(String[] args) {
         long fib=0,fib1=0,fib2=1;
