@@ -49,7 +49,7 @@ public class ProjectEuler107 {
             v[m] = true;
             t += dist[m];
             n(m);
-        }
+        } 
         return t;
     }
 }
