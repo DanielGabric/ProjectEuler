@@ -21,4 +21,4 @@ public class ProjectEuler125 {
         for(int i=n.length()-1;i>=0;--i)rN+=n.charAt(i);
         return n.equals(rN);
     } 
-}
+} 
