@@ -16,5 +16,5 @@ while getLayer(a,a,a,1)<=20000:
     a+=1
 for i in range(1,20001):
     if C[i]==1000:
-        print i
+        print i 
         break
