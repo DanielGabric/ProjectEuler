@@ -12,4 +12,4 @@ public class ProjectEuler317 {
         double volume = (Math.PI/A)*(Ymax*Ymax/2 - (Ymax)*(Ymax));
         System.out.println(volume);
     }
-}
+} 
