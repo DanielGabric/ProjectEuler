@@ -9,5 +9,5 @@ public class ProjectEuler216{
             if(test.isProbablePrime(10))c++;
         }
         System.out.println(c);
-    }
+    } 
 }
