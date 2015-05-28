@@ -13,3 +13,4 @@ public class ProjectEuler67 {
         System.out.println(triangle[0][0]);
     }
 }
+ 
