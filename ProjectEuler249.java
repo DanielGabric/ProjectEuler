@@ -15,4 +15,4 @@ public class ProjectEuler249{
         for(int i=0;i<12500000;++i)if(Library.isPrime(i))c = (c+sum[i])%mod;
         System.out.println(c);
     }
-}
+} 

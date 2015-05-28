@@ -14,5 +14,5 @@ public class ProjectEuler250{
             remainders=newArr;
         }
         System.out.println(remainders[0]-1);
-    }
+    } 
 }
