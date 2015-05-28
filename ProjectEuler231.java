@@ -22,5 +22,4 @@ public class ProjectEuler231 extends Library{
         }
         System.out.println(sum);
     }
-    
 }
