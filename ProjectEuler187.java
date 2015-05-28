@@ -1,4 +1,3 @@
-//Sieve
 public class ProjectEuler187 {
     public static void main(String[] args) {
         ArrayList<Integer> primes = sieveN(2,(int)Math.pow(10,8)/2+1);
@@ -14,4 +13,4 @@ public class ProjectEuler187 {
         }
         System.out.println(c);
     }
-}
+} 
