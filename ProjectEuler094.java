@@ -14,5 +14,5 @@ public class ProjectEuler94 {
     public static boolean s(long N){
         long s = (long)Math.sqrt(N);
         return s*s==N;
-    }
+    } 
 }
