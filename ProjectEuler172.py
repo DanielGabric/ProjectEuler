@@ -22,6 +22,6 @@ for a in range(4):
                             for h in range(4):
                                 for i in range(4):
                                     for j in range(4):
-                                        array = [a,b,c,d,e,f,g,h,i,j]
+                                        array = [a,b,c,d,e,f,g,h,i,j] 
                                         n+=z(array,sum(array))
 print n

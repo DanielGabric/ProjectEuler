@@ -26,7 +26,7 @@ public class ProjectEuler172 extends Library {
                     }
                 }
             }
-        }
+        } 
         System.out.println(n);
     }
 
