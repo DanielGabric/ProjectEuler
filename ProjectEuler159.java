@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class ProjectEuler159 extends Library {
-
     public static void main(String[] args) {
         int[] mdrs = new int[1000000];
         long s = 0;
@@ -23,8 +21,7 @@ public class ProjectEuler159 extends Library {
             s += mdrs[i];
         }
         System.out.println(s);
-    }
-
+    
    //Digital root sum
     public static int getDS(int n) {
         return n%9==0?9:n%9;
