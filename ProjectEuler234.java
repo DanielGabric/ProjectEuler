@@ -40,4 +40,4 @@ public class ProjectEuler234 extends Library {
         long yn = m * x + b;
         return x * (y1 + yn) / 2;
     }
-}
+} 
