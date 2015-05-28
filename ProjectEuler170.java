@@ -44,4 +44,4 @@ public class ProjectEuler170 extends Library {
             r /= 10;
         }
     }
-}
+} 
