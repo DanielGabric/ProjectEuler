@@ -25,4 +25,4 @@ public class ProjectEuler169{
         map.put(val,r);
         return r;
     }
-}
+} 
