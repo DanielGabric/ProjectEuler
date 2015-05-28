@@ -32,4 +32,4 @@ def rec(num_digits, current_digit, allDigits):
 for i in range(START,END+1):
     for j in range(1,10):
         totSum += rec(i,j,1023)
-print totSum
+print totSum 
