@@ -8,7 +8,7 @@ public class ProjectEuler173 {
                 sum+=4*j-4;
                 if(sum>limit)continue out;
                 c++;
-            }
+            } 
         }
         System.out.println(c);
     }
