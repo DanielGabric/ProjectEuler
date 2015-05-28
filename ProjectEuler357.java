@@ -12,7 +12,6 @@ public class ProjectEuler357 extends Library{
         System.out.println(sum);
     }
     public static boolean getFactors(int n) {
-        ArrayList<Integer> factors = new ArrayList<Integer>();
         for (int d = 1; d <= Math.sqrt(n); ++d) {
             int p = d+n/d;
             if (n % d == 0)

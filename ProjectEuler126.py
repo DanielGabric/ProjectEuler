@@ -1,5 +1,5 @@
 def getLayer(a,b,c,n):
-    return 2*(a*b+b*c+a*c)+4*(n-1)*(a+b+c+n-2)
+    return 2*(a*b+b*c+a*c)+4*(n-1)*(a+b+c)+4*(n-1)*(n-2)
 C=[0]*20001
 a,b,c,n=1,0,0,1
 while getLayer(a,a,a,1)<=20000:

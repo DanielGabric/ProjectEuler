@@ -23,3 +23,22 @@ def powMod(a,b,c):
     if(b&1==1)==1: # if odd number
         x = (x*a)%c
     return x
+def isPrime(n):
+    if n <= 1:
+        return False
+    if n == 2: 
+        return True
+    if n % 2 == 0:
+        return False
+    if n < 9 :
+        return True
+    if n % 3 == 0:
+        return False
+    counter = 5
+    while (counter * counter) <= n:
+        if n % counter == 0:
+            return False
+        if n % (counter + 2) == 0: 
+            return False    
+        counter += 6
+    return True
