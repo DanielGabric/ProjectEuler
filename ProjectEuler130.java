@@ -10,4 +10,4 @@ public class ProjectEuler130{
         }
         System.out.println(sum);
     }
-}
+} 

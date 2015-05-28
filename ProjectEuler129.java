@@ -7,4 +7,4 @@ public class ProjectEuler129{
             if(k>1000000){System.out.println(n);break;}
         }
     }
-}
+} 

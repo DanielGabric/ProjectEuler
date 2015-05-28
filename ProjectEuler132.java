@@ -21,4 +21,4 @@ public class ProjectEuler132 {
         }
         System.out.println(sum);
     }
-}
+} 
