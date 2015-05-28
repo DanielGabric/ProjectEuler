@@ -24,5 +24,5 @@ public class ProjectEuler145 {
         String a = "";
         for(int i=n.length()-1;i>=0;--i)a+=n.charAt(i);
         return Integer.parseInt(a);
-    }
-}
+    } 
+} 
