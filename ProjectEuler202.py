@@ -5,4 +5,4 @@ for i in xrange(1,N,3):
     for x in div:
         if i % x !=0 :
             h=h+1
-print h
+print h 
