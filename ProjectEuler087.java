@@ -11,4 +11,4 @@ public class ProjectEuler87 extends Library{
             if(p[i]>0)c++;
         System.out.println(c);
     }
-}
+} 
