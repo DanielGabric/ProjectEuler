@@ -33,3 +33,4 @@ public class ProjectEuler70 {
         return true;
     }
 }
+ 
