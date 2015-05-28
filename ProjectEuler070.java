@@ -11,7 +11,7 @@ public class ProjectEuler70 {
             double phi = totient[i];
             double a = ni/phi;
             if(a<min){
-                min = a;
+                min = a; 
                 n = i;
             }
         }
