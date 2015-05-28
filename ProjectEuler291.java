@@ -14,4 +14,4 @@ public class ProjectEuler291{
         }
         System.out.println(c);
     }
-}
+} 
