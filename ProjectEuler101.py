@@ -17,4 +17,4 @@ for i in range(2,degree+1):
     if P != u(i+1):
         sumOfFits +=P
     beginning.append(u(i+1))
-print sumOfFits
+print sumOfFits  
