@@ -21,4 +21,4 @@ public class ProjectEuler225 {
         }
         System.out.println(start-2);
     }
-}
+} 
