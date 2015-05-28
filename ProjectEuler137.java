@@ -12,4 +12,4 @@ public class ProjectEuler137 {
         System.out.println(fib1.multiply(fib2));
     }
     
-}
+} 
