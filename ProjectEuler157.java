@@ -28,4 +28,4 @@ public class ProjectEuler157 extends Library {
         }
         System.out.println(c);
     }
-}
+} 
