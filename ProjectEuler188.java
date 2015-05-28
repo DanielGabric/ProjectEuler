@@ -8,4 +8,4 @@ public class ProjectEuler188 {
         }
         System.out.println(sum);
     }
-}
+} 
