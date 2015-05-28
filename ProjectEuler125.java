@@ -20,5 +20,5 @@ public class ProjectEuler125 {
         String rN ="";
         for(int i=n.length()-1;i>=0;--i)rN+=n.charAt(i);
         return n.equals(rN);
-    }
+    } 
 }
