@@ -1,4 +1,4 @@
-prev = [-1]*1500000
+prev = {}
 START = 10
 END = 40
 totSum=0
@@ -16,7 +16,7 @@ def rec(num_digits, current_digit, allDigits):
     hash1 = current_digit+10*num_digits+1000*allDigits
     #if this arrangement of arguments has been seen, then we know the number
     #of step numbers, so just return it
-    if prev[hash1]!=-1:
+    if hash1 in prev:
         return prev[hash1]
     #checks if the digit has already been seen
     #if it hasn't it takes away that 1 from the binary
