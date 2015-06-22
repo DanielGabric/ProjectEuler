@@ -14,9 +14,9 @@ def rec(N,tot,number,isG=False):
                         
                     sums+=rec(N+1,tot+i,num,True)
                 else:
-                    sums+=rec(N+1,tot+i,num,False)
+                    sums+=rec(N+1,tot+i,num)
             else:
-                sums+=rec(N+1,tot+i,num,False)
+                sums+=rec(N+1,tot+i,num)
     return sums 
 total=sum([181,211,271,277,421,457,631])
 for i in xrange(1,10):
