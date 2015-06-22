@@ -2,7 +2,7 @@ N = 10**12
 cache=[]
 savedRep={}
 #we know that 2^40 is over N, so our upper bound on lengths of repunits is 39
-for base in range(2,10**6+1):
+for base in range(2,10**6):
     for length in range(3,40):
         if length not in savedRep:
             savedRep[length] = (10**length-1)/9

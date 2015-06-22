@@ -1,3 +1,33 @@
+import math
+import random
+
+def miller_rabin(m, k):
+    s=1
+    t = (m-1)/2
+    while t%2 == 0:
+        t /= 2
+        s += 1
+
+    for r in range(0,k):
+        rand_num = random.randint(1,m-1)
+        y = pow(rand_num, t, m)
+        prime = False
+
+        if (y == 1):
+            prime = True
+
+
+        for i in range(0,s):
+            if (y == m-1):
+                prime = True
+                break
+            else:
+                y = (y*y)%m
+
+        if not prime:
+            return False
+
+    return True
 def sieve(n):
     isPrime = [False]*2+[True]*(n-1)
     i=2
