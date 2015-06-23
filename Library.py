@@ -5,7 +5,7 @@ def phi(n):
     for i in xrange(0,n+1):
         totients.append(i)
     for i in xrange(2,n+1):
-        if totients[i] == i: 
+        if totients[i] == i:  
             for j in xrange(i,n+1,i):
                 totients[j] = totients[j] / i * (i - 1)
             
