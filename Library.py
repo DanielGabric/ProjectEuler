@@ -1,6 +1,15 @@
 import math
 import random
-
+def phi(n):
+    totients = []
+    for i in xrange(0,n+1):
+        totients.append(i)
+    for i in xrange(2,n+1):
+        if totients[i] == i: 
+            for j in xrange(i,n+1,i):
+                totients[j] = totients[j] / i * (i - 1)
+            
+    return totients;
 def miller_rabin(m, k):
     s=1
     t = (m-1)/2

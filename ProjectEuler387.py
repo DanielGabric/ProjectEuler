@@ -11,7 +11,6 @@ def rec(N,tot,number,isG=False):
         if N < lim-1:
             if N !=1:
                 if Library.miller_rabin(div,10):
-                        
                     sums+=rec(N+1,tot+i,num,True)
                 else:
                     sums+=rec(N+1,tot+i,num)
