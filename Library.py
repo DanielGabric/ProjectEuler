@@ -1,7 +1,7 @@
 import math
-import random
+import random 
 
-def phi(n):
+def phi(n): 
     totients = []
     for i in xrange(0,n+1):
         totients.append(i)
