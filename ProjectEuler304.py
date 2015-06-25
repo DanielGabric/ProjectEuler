@@ -43,5 +43,5 @@ for i in xrange(1,index+1):
     bigPow = N+i
     M = pow(T,bigPow-1)
     for j in xrange(1,3):
-        sums = (sums + M[1][j] * F[j]) % MOD
+        sums = (sums + M[1][j]) % MOD
 print sums
