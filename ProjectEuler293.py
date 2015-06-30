@@ -9,12 +9,12 @@ def M (N,s):
 def gen(N,i):
     if i < length-1 and N*primes[i+1]<LIM:
         start = N*primes[i+1]
-        tot.append(M(start+1,start))
+        tot.append(M(start+3,start))
         gen(start,i+1)
     if i<length and N*primes[i]<LIM:
         start = N*primes[i]    
-        tot.append(M(start+1,start))
+        tot.append(M(start+3,start))
         gen(start,i)
 gen(2,0)
-print sum(set(tot))-1
+print sum(set(tot))
 
