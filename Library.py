@@ -1,5 +1,6 @@
 import math
-import random 
+import random
+#mul and pow are fib q-matrix
 def mul( A,  B,mod):
     C = [[0 for i in xrange(3)]for i in xrange(3)]
     for i in xrange(1,3):
