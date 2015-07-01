@@ -1,6 +1,19 @@
 import math
 import random 
-
+def mul( A,  B,mod):
+    C = [[0 for i in xrange(3)]for i in xrange(3)]
+    for i in xrange(1,3):
+        for j in xrange(1,3):
+            for k in xrange(1,3):
+                C[i][j] = (C[i][j] + A[i][k] * B[k][j]) % mod
+    return C
+def pow(A,  p,mod):
+    if p == 1:
+        return A
+    if (p % 2)==1:
+        return mul(A, pow(A, p-1,mod),mod)
+    X = pow(A, p/2,mod)
+    return mul(X, X,mod)
 def phi(n): 
     totients = []
     for i in xrange(0,n+1):
