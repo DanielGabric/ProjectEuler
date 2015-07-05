@@ -1,5 +1,5 @@
 import math
-import random
+import random 
 #mul and pow are for q-matrix
 def mul( A,  B,mod):
     C = [[0 for i in xrange(len(B[0]))]for i in xrange(len(A))]
