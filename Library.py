@@ -1,11 +1,11 @@
 import math
 import random
-#mul and pow are fib q-matrix
+#mul and pow are for q-matrix
 def mul( A,  B,mod):
-    C = [[0 for i in xrange(3)]for i in xrange(3)]
-    for i in xrange(1,3):
-        for j in xrange(1,3):
-            for k in xrange(1,3):
+    C = [[0 for i in xrange(len(B[0]))]for i in xrange(len(A))]
+    for i in xrange(0,len(A)):
+        for j in xrange(0,len(B[0])):
+            for k in xrange(0,len(B)):
                 C[i][j] = (C[i][j] + A[i][k] * B[k][j]) % mod
     return C
 def pow(A,  p,mod):
