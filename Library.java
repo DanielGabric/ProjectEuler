@@ -305,6 +305,28 @@ public class Library {
         }
         return z;
     }
+    public static long powMod(long x, long y, long m) {
+        if (x < 0) {
+            throw new IllegalArgumentException("Negative base not handled");
+        }
+        if (y < 0) {
+            throw new IllegalArgumentException("Reciprocal not handled");
+        }
+        if (m <= 0) {
+            throw new IllegalArgumentException("Invalid modulus");
+        }
+
+        // Exponentiation by squaring
+        long z = 1;
+        while (y != 0) {
+            if ((y & 1) != 0) {
+                z = (long) ((long) z * x % m);
+            }
+            x = (long) ((long) x * x % m);
+            y >>>= 1;
+        }
+        return z;
+    }
 
     // Returns n!.
     public static BigInteger factorial(int n) {
