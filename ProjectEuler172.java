@@ -43,7 +43,7 @@ public class ProjectEuler172 extends Library {
         //multiply the number of digits allowed for first digit by 17!
         m = m * SEVENTEEN;
         //Example
-        //If there is more than one digit per number than divide by
+        //If there is more than one digit per number then divide by
         //The number of digits! since there is no order in the
         //same digits
         for (int i = 0; i < 10; ++i)m /= f(a[i]);
