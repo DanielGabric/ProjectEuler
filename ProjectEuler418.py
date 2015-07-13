@@ -1,85 +1,113 @@
-#not finished yet
 from decimal import *
 from math import *
 getcontext().prec=200
 primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43]
-logs = [Decimal(log10(i)) for i in primes]
-
-cache={}
+exponents=[39, 19, 9, 6, 3, 3, 2, 2, 1, 1, 1, 1, 1, 1]
 N=43
-A=1
-C=1 
-exponents = [0]*(len(primes))
-exp =[0]*len(primes)
 fact=1
 for i in xrange(len(primes)):
-    pj=primes[i]
-    while pj <= N:
-        exponents[i]+=N/pj
-        pj*=primes[i]
     fact *= primes[i]**exponents[i]
-sumOfLog = sum([logs[i]*exponents[i] for i in xrange(len(primes))])
-print sumOfLog
 curt = int(fact**(1.0/3.0))
-print exponents
 length = len(primes)
-Fn=0
-freqA = [0]*length
-freqC = [0]*length
-#make them into logs then add them for sum and subtract for RATIO
-#make sure you have a frequency array
-#backtracking
-RATIO = Decimal(200)/Decimal(1)
-def rec1(start):
-    global RATIO
-    global Fn
-    global freqC
-    global freqA
-    global C
+A=1
+saved = [[primes[j]**i for i in xrange(0,exponents[j]+1)] for j in xrange(length)]
+toCheck=[]
+RATIO = Decimal(200)
+for a in xrange(exponents[0]+1):
+    print a
+    A*=saved[0][a]
+    if A>int(1.0001*curt): 
+        A/=saved[0][a]
+        break
+    for b in xrange(exponents[1]+1):
+        A*=saved[1][b]
+        if A>int(1.0001*curt): 
+            A/=saved[1][b]
+            break
+        for c in xrange(exponents[2]+1):
+            A*=saved[2][c]
+            if A>int(1.0001*curt): 
+                A/=saved[2][c]
+                break
 
-    while start <length and exp[start]==0:start+=1
-
-    if start >= length: return False
-
-    #print a," ",c
-    if C <= int(1.01*curt) and C >= A:
-        newRat = Decimal(C)/Decimal(A)
-        if newRat < RATIO:
-            bExp = [freqB[i]-freqA[i] for i in xrange(length)]
-            b=1
-            for i in xrange(length):
-                b*=primes[i]**bExp[i]
-            if A <= b and b <= C:
-                Fn = A+b+C
-                RATIO = newRat
-        return True
-    for i in xrange(exp[start]):
-        freqC[start]+=1
-        C*=primes[start]
-        if rec1(c,a,exp,start+1,M): return True
-        freqC[start]-=1
-        C/=primes[start]
-    return False
-
-
-def rec(start):
-    global freqA
-    global A
-    global exp
-    if start >=length:return True
-    print A," ",freqA
-    if A>= int(0.99*curt):
-        for i in xrange(length):
-            exp[i]=exponents[i]-freqA[i]
-        rec1(0)
-        
-    for i in xrange(exponents[start]):
-
-        freqA[start]+=1
-        A*=primes[start]
-        if A<=curt and  rec(start+1): return True
-        freqA[start]-=1
-        A/=primes[start]
-    return False
-rec(0)
-print Fn," ",RATIO
+            for d in xrange(exponents[3]+1):
+                A*=saved[3][d]
+                if A>int(1.0001*curt): 
+                    A/=saved[3][d]
+                    break
+                for e in xrange(exponents[4]+1):
+                    A*=saved[4][e]
+                    if A==1 or A>int(1.0001*curt): 
+                        A/=saved[4][e]
+                        break
+                    for f in xrange(exponents[5]+1):
+                        A*=saved[5][f]
+                        if A>int(1.0001*curt):
+                            A/=saved[5][f]
+                            break
+                        for g in xrange(exponents[6]+1):
+                            A*=saved[6][g]
+                            if A>int(1.0001*curt): 
+                                A/=saved[6][g]
+                                break
+                            for h in xrange(exponents[7]+1):
+                                A*=saved[7][h]
+                                if A>int(1.0001*curt): 
+                                    A/=saved[7][h]
+                                    break
+                                for i in xrange(exponents[8]+1):
+                                    A*=saved[8][i]
+                                    if A>int(1.0001*curt): 
+                                        A/=saved[8][i]
+                                        break
+                                    for j in xrange(exponents[9]+1):
+                                        A*=saved[9][j]
+                                        if A>int(1.0001*curt): 
+                                            A/=saved[9][j]
+                                            break
+                                        for k in xrange(exponents[10]+1):
+                                            A*=saved[10][k]
+                                            if A>int(1.0001*curt): 
+                                                A/=saved[10][k]
+                                                break
+                                            for l in xrange(exponents[11]+1):
+                                                A*=saved[11][l]
+                                                if A>int(1.0001*curt): 
+                                                    A/=saved[11][l]
+                                                    break
+                                                for m in xrange(exponents[12]+1):
+                                                    A*=saved[12][m]
+                                                    if A>int(1.0001*curt): 
+                                                        A/=saved[12][m]
+                                                        break
+                                                    for n in xrange(exponents[13]+1):
+                                                        A*=saved[13][n]
+                                                        if A>int(1.0001*curt): 
+                                                            A/=saved[13][n]
+                                                            break
+                                                        if A >= int(0.9999*curt):
+                                                            toCheck.append(A)
+                                                        A/=saved[13][n]
+                                                    A/=saved[12][m]
+                                                A/=saved[11][l]
+                                            A/=saved[10][k]
+                                        A/=saved[9][j]
+                                    A/=saved[8][i]
+                                A/=saved[7][h]
+                            A/=saved[6][g]
+                        A/=saved[5][f]
+                    A/=saved[4][e]
+                A/=saved[3][d]
+            A/=saved[2][c]
+        A/=saved[1][b]
+    A/=saved[0][a]
+for i in toCheck:
+    for j in toCheck:
+        if i > j:continue
+        if fact % (i*j)==0:
+            if i <= fact/(i*j) <= j:
+                newRat = Decimal(j)/Decimal(i)
+                if newRat < RATIO:
+                    RATIO = newRat
+                    Fn = i+j+fact/(i*j)
+print Fn
