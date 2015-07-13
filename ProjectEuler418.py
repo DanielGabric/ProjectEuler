@@ -29,7 +29,6 @@ for a in xrange(exponents[0]+1):
             if A>int(1.0001*curt): 
                 A/=saved[2][c]
                 break
-
             for d in xrange(exponents[3]+1):
                 A*=saved[3][d]
                 if A>int(1.0001*curt): 
