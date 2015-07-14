@@ -38,7 +38,6 @@ int main(){
                 N/=3;
             }
             for(k=0;k<firstLimit;++k){
-
                 flag=0;
                 int R = k;
                 for(x=0;x<depth;++x){
