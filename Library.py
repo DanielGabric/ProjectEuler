@@ -11,7 +11,7 @@ def mul( A,  B,mod):
 def pow(A,  p,mod):
     if p == 1:
         return A
-    if (p % 2)==1:
+    if (p % 2)==1: 
         return mul(A, pow(A, p-1,mod),mod)
     X = pow(A, p/2,mod)
     return mul(X, X,mod)
