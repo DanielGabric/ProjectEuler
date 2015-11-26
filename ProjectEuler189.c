@@ -31,7 +31,6 @@ void recurse(int last, int c, int n){
             recurse(i,c+1,n);
         }
     }
-
 }
 int main(){
     ways[0][1]=ways[1][1]=ways[2][1]=1;
