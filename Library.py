@@ -96,3 +96,11 @@ def isPrime(n):
             return False    
         counter += 6 
     return True
+def gcd(x, y):
+    while y != 0 :
+        z = x % y
+        x = y
+        y = z
+        
+    return x
+    
