@@ -353,7 +353,7 @@ public class Library {
     public static BigInteger c(int n, int k) {
         return factorial(n).divide(factorial(n - k).multiply(factorial(k)));
     }
-
+ 
     // Returns the largest non-negative integer that divides both x and y.
     public static int gcd(int x, int y) {
         while (y != 0) {
