@@ -116,5 +116,5 @@ def modinv(a,m):
     if gcd !=1:
         return None
     else:
-        return x%m
+        return x%m 
     
