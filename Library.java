@@ -169,25 +169,25 @@ public class Library {
     }
 
     public static boolean[] sieve(int N) {
-        boolean[] isPrime = new boolean[(N + 1)/3];
+        boolean[] isPrime = new boolean[N+1];  //[(N + 1)/3];
         for (int i = 0; i < isPrime.length; i++) {
             isPrime[i] = true;
         }
         
-        /* for (int i = 2; i * i <= N; i++) {
+         for (int i = 2; i * i <= N; i++) {
             if (isPrime[i]) {
                 for (int j = i; i * j <= N; j++) {
                     isPrime[i * j] = false;
                 }
             }
-        }*/
-        for (int i = 5, t = 2; i*i < N; i += t, t = 6 - t) {
+        }
+        /*for (int i = 5, t = 2; i*i < N; i += t, t = 6 - t) {
 
             if (isPrime [i / 3]) {
                 for (int j = i * i, v = t; j < N; j += v * i, v = 6 - v)
                     isPrime [j / 3] = false; 
             }
-        }
+        }*/
         return isPrime;
     }
 
