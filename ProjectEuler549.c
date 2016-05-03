@@ -17,15 +17,13 @@ int main(){
     for(i=2;i<=N;++i){
         count=0;
         current=i;
-        int max=-1,save1=0,save2=0,save3=0,currentOne=1;
+        int max=-1,save1=0;
         while(current>1){
             count=0;
-            currentOne=1;
             save1=divPrime[current];
             while(current%save1==0){
                 current/=save1;
                 count++;
-                currentOne*=save1;
             }
             int f = 0,r = 1,multiplier =1;
             while((f+=r)<count)r*=save1;
@@ -41,14 +39,9 @@ int main(){
                     break;
                 }
             }
-            if(multiplier*save1>max){
-                max = save1*multiplier;
-                save2=multiplier;
-                save3=save1;
-            }
+            if(multiplier*save1>max)max = save1*multiplier;
         }
-        
-        sum+=save3*save2;
+        sum+=max;
     }
     printf("%lld\n",sum);
     return 0;
